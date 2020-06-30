@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interval Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">INTERVAL TIMER</div>
+    </header>
+    <div class="main-container">
+      <div class="column-box">
+        <div>
+        <h2>
+          SET TIMER
+        </h2>
+      </div>
+
+
+          <div class="controls-container">
+          <p>sets:</p>
+          <button id="setMinus" onclick="handleNumberOfSets('subtract')">-</button>
+          <p id="setSetNumber">0</p>
+          <button id="setPlus" onclick="handleNumberOfSets('add')">+</button>
+        </div>
+        
+        <div class="controls-container">
+          <p>work:</p>
+          <button id="workMinusMinutes" onclick="handleWorkSeconds('minusMinutes')">-</button>
+          <button id="workPlusMinutes" onclick="handleWorkSeconds('plusMinutes')">+</button> 
+          <p id="setWorkNumber">00:00</p>
+          <button id="workMinusSeconds" onclick="handleWorkSeconds('minusSeconds')">-</button>
+          <button id="workPlusSeconds" onclick="handleWorkSeconds('plusSeconds')">+</button>
+        </div>
+                
+        <div class="controls-container">
+          <p>rest:</p>
+          <button id="restMinusMinutes" onclick="handleRestSeconds('minusMinutes')">-</button>
+          <button id="restPlusMinutes" onclick="handleRestSeconds('plusMinutes')">+</button>
+          <p id="setRestNumber">00:00</p>
+          <button id="restMinusSeconds" onclick="handleRestSeconds('minusSeconds')">-</button>
+          <button id="restPlusSeconds" onclick="handleRestSeconds('plusSeconds')">+</button>
+        </div>
+    </br>
+    <div class = "bottom-button-container">
+      <button class="text clear" id="clearButton" onclick="clearNumbers()">CLEAR</button>
+        <button class="text confirm" id="confirmButton" onclick="confirmTimer()">CONFIRM</button>
+        <button class="text save" onclick="displayBox()">SAVE</button>
+      </div>
+      </div>
+
+
+      <div class="column-box">
+        <div class="subheading-container">
+        <button class="start" id="startButton" onclick="startCountdown(), hideStartButton()"> 
+          <img src="./play-button.png" class="start-pause-image">
+        </button>
+        <button class="pause" id="pauseButton" onclick="pauseCountdown(), hidePauseButton()"><img src="./pause-button.png" class="start-pause-image"></button>
+      </div>
+      <div class="start-mini-containers">
+        <p>sets:</p>
+        <div id="confirmedSetNumber" class="countdown-text">0</div>
+      </div>
+      <div class="start-mini-containers" id="work-container">
+        <p>work:</p>
+        <p class="countdown-text" id="confirmedWorkNumber">00:00</p>
+      </div>
+      <div class="start-mini-containers" id="rest-container">
+      <p>rest:</p>
+      <p class="countdown-text"><span id="confirmedRestNumber">00:00</p>
+      </div>
+      </div>
+
+      
+      <div class="column-box saved">
+        <div class="subheading-container">
+        <h2>
+          SAVED TIMERS
+          </h2>
+        </div>
+        <div id='save-countdown'></div>
+        <img src="alarm1.png" class="alarmclock" id="clock-image"/>
+      </div>
+    </div>
+    <div class="pop-up-box" id="popUpBox">
+      <h2 class="pop-up-heading">CONFIRM</h2>
+      <p class="pop-up">Name of countdown:</p>
+      <input type="text" id="nameOfCountdown" class="name-input">
+      <div class="bottom-button-container">
+      <button class="text confirm" onclick="saveCountdown(); hideBox()">SAVE</button>
+      <button class="text clear" onclick="hideBox()">CLOSE</button>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
