@@ -54,7 +54,7 @@ function handleClockOperation(operation, seconds) {
 //take the seconds off the original number and then divide the number left by 60 to find minutes and store in var called mins
 //return the numbers as a string with a colon in the numbber
 
-//Format seconds
+//Format seconds - THIS IS A PURE FUNCTION
 
 function clockify(number) {
   const seconds = number % 60;
