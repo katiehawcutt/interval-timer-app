@@ -37,7 +37,7 @@ function formatNumbersLessThanTen(number) {
 }
 ```
 
-### Still to do:
+### Stretch Goals:
 
 - Save the countdowns in seperate divs / indivually so they can be deleted one at a time
 
