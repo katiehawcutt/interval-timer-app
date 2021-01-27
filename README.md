@@ -70,4 +70,4 @@ No prerequisites
 1. On the left you can decide how many sets you want to do, how many seconds you want to work for and how many seconds you want to rest for.
 2. Once you've set this data press confirm and you'll notice the details appear in the middle container
 3. Press the play button to start the workout. You can pause at any time by pressing pause.
-4. If you want to save your workout (to local storage) you can press save and enter the name of the workout. You will notice it appear in the right container where all your saved workouts are stored. You can delete them anytime or you can click Go! to start the workout.
+4. The save feature is not yet fully functioning as the data is not being saved to local storage. This means that when the page is refreshed the workouts disappear.
