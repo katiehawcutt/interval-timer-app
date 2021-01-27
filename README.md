@@ -6,7 +6,7 @@
 
 _I spent quite a bit of time working on this. It felt like my first proper project and I learnt a lot. I think it was the most complex JavaScript coding I'd done so far and it enabled me to feel like I was getting to grips with JS. There were quite a few challenges but with a bit of help to get over them it really helped me to progress and give me new confidence in my ability._
 
-### Main learning points:
+## Main learning points:
 
 - The importance of refactoring. I had a lot of repitition in my code to begin with and it got to the stage where it was overwhelming and I couldn't think straight! It felt so good to refactor it and half the amount of code. Up until this point I'd not really seen the benefits of refactoring in such a striking way as my projects just weren't big enough. This was a great way to learn!
 
@@ -37,8 +37,37 @@ function formatNumbersLessThanTen(number) {
 }
 ```
 
-### Stretch Goals:
+## Stretch Goals:
 
 - Save the countdowns in seperate divs / indivually so they can be deleted one at a time
 
 - Save the countdowns to local storage
+
+## Built with:
+
+- HTML
+- CSS
+- JavaScript
+
+## Getting Started:
+
+Clone the repo as instructed below
+
+## Prerequisites:
+
+No prerequisites
+
+## Installation
+
+1.  Clone the repo
+
+`git clone https://github.com/katiehawcutt/interval-timer-app.git`
+
+2. Run the index.html in a browser
+
+## Usage
+
+1. On the left you can decide how many sets you want to do, how many seconds you want to work for and how many seconds you want to rest for.
+2. Once you've set this data press confirm and you'll notice the details appear in the middle container
+3. Press the play button to start the workout. You can pause at any time by pressing pause.
+4. If you want to save your workout (to local storage) you can press save and enter the name of the workout. You will notice it appear in the right container where all your saved workouts are stored. You can delete them anytime or you can click Go! to start the workout.
